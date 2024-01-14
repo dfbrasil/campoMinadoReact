@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import params from './src/params';
 import { Component } from 'react';
 import Field from './src/components/Field';
+import Flag from './src/components/Flag';
 
 export default class App extends Component {
   render () {
@@ -21,6 +22,12 @@ export default class App extends Component {
         <Field opened nearMines={5}/>
         <Field opened nearMines={6}/>
         <Field opened nearMines={7}/>
+        <Field mined />
+        <Field mined opened/>
+        <Field mined opened exploded/>
+        <Field flagged />
+        <Field flagged opened/>
+
       </View>
     );
   }    
